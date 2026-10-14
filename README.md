@@ -1,82 +1,31 @@
-<!-- unified-readme:start -->
-<div align="center">
-
-# AI Intune Voice Assistant
-
-**Archived AI voice assistant experiment for Microsoft Intune administration workflows.**
-
-Build. Automate. Share.
-
-[![GitHub stars](https://img.shields.io/github/stars/JayRHa/AIIntuneVoiceAssistant?style=for-the-badge&logo=github&color=f4c542)](https://github.com/JayRHa/AIIntuneVoiceAssistant/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/JayRHa/AIIntuneVoiceAssistant?style=for-the-badge&logo=github&color=4078c0)](https://github.com/JayRHa/AIIntuneVoiceAssistant/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/JayRHa/AIIntuneVoiceAssistant?style=for-the-badge&logo=github&color=d73a4a)](https://github.com/JayRHa/AIIntuneVoiceAssistant/issues)
-[![Contributors](https://img.shields.io/github/contributors/JayRHa/AIIntuneVoiceAssistant?style=for-the-badge&logo=github&color=28a745)](https://github.com/JayRHa/AIIntuneVoiceAssistant/graphs/contributors)
-
-<p>
-  <a href="https://jannikreinhard.com/">Blog</a> ·
-  <a href="https://www.linkedin.com/in/jannik-r/">LinkedIn</a> ·
-  <a href="https://x.com/jannik_reinhard">X</a>
+<!-- jr-brand:start -->
+<p align="center">
+  <a href="https://jannikreinhard.com/">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — I help enterprises ship secure AI agents" width="100%">
+  </a>
 </p>
+<p align="center">
+  <a href="https://jannikreinhard.com/">Website</a> ·
+  <a href="https://www.linkedin.com/in/jannik-r/">LinkedIn</a> ·
+  <a href="https://x.com/jannik_reinhard">X</a> ·
+  <a href="https://www.youtube.com/@jannikreinhard">YouTube</a>
+</p>
+<!-- jr-brand:end -->
 
----
+# AIIntune Voice Assistant
 
-`AI-assisted Operations` | `Python` | `Public` | `Archived`
+**Type:** Examples and labs · **Status:** Archived · Reference
 
-</div>
+<a id="intro"></a>
 
-## What is this?
+## Overview
 
-AI Intune Voice Assistant explores AI-assisted workflows where prompts, context, and automation logic help with endpoint or operations tasks.
+AI voice assistant experiment for Microsoft Intune administration workflows.
 
-## Project Context
-
-- Use it as a reference for combining automation with model-assisted analysis or responses.
-- The important design boundary is keeping deterministic automation separate from model-generated output.
-- This repository is archived and kept as a reference implementation.
-
-## How It Works
-
-Input is collected from the user or system, enriched with context, sent through AI-assisted processing, then converted into a recommendation, response, or automation step.
-
-```mermaid
-flowchart LR
-    Input[User or system input] --> Context[Context collection]
-    Context --> Model[AI-assisted processing]
-    Model --> Review[Validation or review]
-    Review --> Output[Recommendation or action]
-    Output --> User[User workflow]
-```
-
-## Quick Start
-
-1. Review the project context and workflow below.
-2. Clone the repository:
-
-   ```bash
-   git clone https://github.com/JayRHa/AIIntuneVoiceAssistant.git
-   ```
-
-3. Continue with the setup, usage, or workflow sections below.
-
----
-<!-- unified-readme:end -->
-
-## Intro
 This script allows users to interact with a voice assistant that is designed to answer questions related to Microsoft Intune. The assistant is friendly, concise, and provides factual answers to queries. It does not provide answers that are not related to Microsoft products or Intune.
 
-## Blog post
-https://jannikreinhard.com/2023/04/23/intune-ai-voice-bot/
-
-## Contribution
-<table>
-  <tbody>
-    <tr>
-        <td align="center"><a href="https://github.com/Fadope1"><img src="https://avatars.githubusercontent.com/u/68806729?v=4" width="100px;" alt="Fabian Peschke"/><br /><sub><b>Fabian Peschke</b></sub></a><br /><a href="https://www.linkedin.com/in/fabian-peschke-a55554250/" title="LinkedIn">💬</a></td>
-        <td align="center"><a href="https://github.com/JayRHa"><img src="https://avatars.githubusercontent.com/u/73911860?v=4" width="100px;" alt="Jannik Reinhard"/><br /><sub><b>Jannik Reinhard</b></sub></a><br /><a href="https://x.com/jannik_reinhard" title="X">💬</a> <a href="https://www.linkedin.com/in/jannik-r/" title="LinkedIn">💬</a></td>
-  </tbody>
-</table>
-
 ## Requirements
+
 - Python 3.6 or higher
 - Azure Cognitive Services Speech SDK
 - OpenAI Python library
@@ -87,7 +36,33 @@ pip install azure-cognitiveservices-speech
 pip install openai
 ```
 
+## Quickstart
+
+Get the source locally:
+
+```bash
+git clone https://github.com/JayRHa/intune-ai-voice-assistant.git
+cd intune-ai-voice-assistant
+```
+
+This repository is archived; the documentation below describes its last published implementation.
+
+## Blog post
+
+https://jannikreinhard.com/2023/04/23/intune-ai-voice-bot/
+
+## Contribution
+
+<table>
+  <tbody>
+    <tr>
+        <td align="center"><a href="https://github.com/Fadope1"><img src="https://avatars.githubusercontent.com/u/68806729?v=4" width="100px;" alt="Fabian Peschke"/><br /><sub><b>Fabian Peschke</b></sub></a><br /><a href="https://www.linkedin.com/in/fabian-peschke-a55554250/" title="LinkedIn">💬</a></td>
+        <td align="center"><a href="https://github.com/JayRHa"><img src="https://avatars.githubusercontent.com/u/73911860?v=4" width="100px;" alt="Jannik Reinhard"/><br /><sub><b>Jannik Reinhard</b></sub></a><br /><a href="https://x.com/jannik_reinhard" title="X">💬</a> <a href="https://www.linkedin.com/in/jannik-r/" title="LinkedIn">💬</a></td>
+  </tbody>
+</table>
+
 ## Configuration
+
 Before running the script, you must set the following variables with the appropriate values:
 
 - speech_key: Your Azure Cognitive Services Speech subscription key.
@@ -101,9 +76,16 @@ Before running the script, you must set the following variables with the appropr
 You can find more informations here: https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt
 
 ## Usage
+
 Run the script with the command:
 ```
 python intune_voice_assistant.py
 ```
 
 The voice assistant will begin listening for input. You can ask questions by starting with "Hey" followed by your query. To reset the conversation context, say "Reset." To stop the conversation, say "Stop" or press Ctrl-Z.
+
+<!-- jr-brand-footer:start -->
+---
+
+[Articles and guides](https://jannikreinhard.com/) · [Repository index](https://github.com/JayRHa/.github/blob/main/REPOSITORIES.md)
+<!-- jr-brand-footer:end -->
